@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eef1f5;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    /* Max width for mobile view */
+    height: 100vh;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-lg);
+    overflow-y: auto;
+    position: relative;
+
+    /* Hide scrollbar for cleaner look */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
